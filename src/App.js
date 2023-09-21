@@ -4,14 +4,15 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
+import "boostrap/dist/css/boostrap.min.css";
 
+//1//
 import "./App.css";
 
-import PaginaContato from "./screens/PaginaContato";
-
 import PaginaInicial from "./screens/PaginaInicial";
+import PaginaContato from "./screens/PaginaContato";
 import PaginaSobre from "./screens/PaginaSobre";
-
+//2//
 const router = createBrowserRouter([
   {
     path: "*",
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
     Component: RootNavigation,
   },
 ]);
-
+//3//
 function App() {
   return (
     <div className="App">
@@ -27,7 +28,7 @@ function App() {
     </div>
   );
 }
-
+//4//
 function RootNavigation() {
   return (
     <Routes>
